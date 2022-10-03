@@ -6,18 +6,39 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import SettingsIcon from '@mui/icons-material/Settings';
 import InfoIcon from '@mui/icons-material/Info';
 
-function ChatHeader( { channelName }) {
+function ChatHeader( {/*{ channelName } */}) {
+    
+    // useEffect(() => {
+    //     if (yearId) {
+    //         db.collection("channels").doc(channelId).collection('messages').orderBy('timestamp','asc')
+    //         .onSnapshot((snapshot) => 
+    //             setMessages(snapshot.docs.map((doc) => doc.data()))
+    //         ); 
+    //     }
+    // },[yearId]);
+
   return (
     <div className="chatheader">
         
             <h3>
             <span className="hash"><SwipeRightAltIcon/>
-            { channelName }</span>
+            {/* { channelName } */}
+            </span>
             </h3>
-            <p className='header-year'>FE</p>
-            <p className='header-year'>SE</p>
-            <p className='header-year'>TE</p>
-            <p className='header-year'>BE</p>
+            {/* <button className='header-year' onClick={handleFE}>FE</button>
+            <button className='header-year' onClick={handleSE}>SE</button>
+            <button className='header-year' onClick={handleTE}>TE</button>
+            <button className='header-year' onClick={handleBE}>BE</button> */}
+
+         {/*<button className='header-year' onClick={somefunction}>FE</button>
+            <button className='header-year' onClick={somefunction}>SE</button>
+            <button className='header-year' onClick={somefunction}>TE</button>
+            <button className='header-year' onClick={somefunction}>BE</button> */}
+            
+            <button className='header-year'>FE</button>
+            <button className='header-year'>SE</button>
+            <button className='header-year'>TE</button>
+            <button className='header-year'>BE</button>
 
             <HomeIcon />
             <PeopleAltIcon />
