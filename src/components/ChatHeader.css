@@ -1,0 +1,49 @@
+.root {
+    --text-primary: #ffffff7b;
+    --bg-primary: #57999d3e;
+    --bg-secondary: #278390;
+    --bg-ternary: #2dedff79;
+    --chat-area-color:#000000;
+}
+
+.chatheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    padding-left: 3px;
+    border-left:3px solid #000000;
+    background-color: var(--bg-primary);
+    color:var(--text-primary);
+}
+
+.hash{
+    font-size: 20px;
+    padding:10px;
+}
+
+.chatheader > .MuiSvgIcon-root {
+    padding: 5px;
+    cursor:pointer;
+}
+.chatheader > .MuiSvgIcon-root:hover {
+    color: var(--bg-ternary);
+    background-color:var(--chat-area-color);
+    height: 100%;
+}
+
+.header-year {
+    color: white;
+    padding:10px;
+    font-weight: 900;
+}
+
+.header-year:hover {
+    display: flex;
+    color: var(--bg-ternary);
+    background-color: var(--chat-area-color);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+}

@@ -1,0 +1,75 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex:0.15;
+    height: 100vh;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding-left: 0px;
+    border-left: 48px solid rgba(0, 0, 0, 0.374);
+}
+
+.sidebar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.636);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary)
+}
+
+.sidebar-veins {
+    flex:1;
+}
+
+.add-vein {
+    cursor: pointer;
+}
+.add-vein:hover {
+    background-color: var(--chat-area-color);
+    color: var(--bg-ternary);
+    border-radius: 5px;
+}
+
+.vein-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--bg-primary);
+    padding-bottom: 12px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.323);
+}
+
+.sidebar-year, .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--bg-secondary);
+    border-top: 2px solid rgba(0, 0, 0, 0.604);
+}
+
+.year-input {
+    flex:1;
+    padding: 6px;
+}
+
+.profile-info{
+    flex:1;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    font-size: 12px;
+    font-style:italic;
+    color: rgba(209, 226, 209, 0.899);
+}
+
+.exit {
+    padding-top: 3px;
+}
+.exit:hover {
+    color: orangered;
+    cursor:pointer;
+}

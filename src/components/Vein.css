@@ -1,0 +1,25 @@
+.root {
+    --text-primary: #2a2727;
+    --bg-primary: #08110b9b;
+    --bg-secondary: #376c47;
+    --bg-ternary: #3d463586;
+    --chat-area-color:#000000;
+}
+
+.vein >h4 {
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+.vein:hover {
+    background-color: var(--bg-ternary);
+    color: var(--chat-area-color);
+    cursor: pointer;
+}
+
+.hash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}

@@ -1,0 +1,44 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #00070b;
+}
+
+.login > button {
+    position: absolute;
+    bottom:145px;
+    width: 300px;
+    /* background-color: var(--bg-primary); */
+    background-color: #38B6FF;
+    color: black;
+    font-weight: 800;
+}
+
+.login > button:hover {
+    background-color: var(--chat-area-color);
+    /* color: var(--bg-ternary); */
+    color: #38B6FF;
+}
+
+.login > div >img {
+    position: absolute;
+    bottom:335px;
+    left: 545px;
+    object-fit: contain;
+    height: 350px;
+    padding: 0;
+    margin: none;
+}
+
+.appname {
+    /* color: var(--bg-ternary); */
+    color: #38B6FF;
+    /* color: white; */
+    position: absolute;
+    bottom:225px;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: monospace;
+}
