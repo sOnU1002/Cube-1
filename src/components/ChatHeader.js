@@ -6,13 +6,14 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import SettingsIcon from '@mui/icons-material/Settings';
 import InfoIcon from '@mui/icons-material/Info';
 
-function ChatHeader( { channelName }) {
+function ChatHeader( {/*{ channelName } */}) {
   return (
     <div className="chatheader">
         
             <h3>
             <span className="hash"><SwipeRightAltIcon/>
-            { channelName }</span>
+            {/* { channelName } */}
+            </span>
             </h3>
             <p className='header-year'>FE</p>
             <p className='header-year'>SE</p>

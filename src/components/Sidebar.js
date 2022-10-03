@@ -12,32 +12,33 @@ import db, { auth } from '../firebase';
 function Sidebar() {
 
   const user = useSelector(selectUser);
-  const [ channels, setChannels ] = useState([]);
+  // const [ channels, setChannels ] = useState([]);
 
-  useEffect(() => {
-    db.collection('channels')
-    .onSnapshot(snapshot => {
-      setChannels(snapshot.docs.map(doc => ({
-        id: doc.id,
-        channel: doc.data(),
-      })))
-    })
-  },[])
+  // useEffect(() => {
+  //   db.collection('channels')
+  //   .onSnapshot(snapshot => {
+  //     setChannels(snapshot.docs.map(doc => ({
+  //       id: doc.id,
+  //       channel: doc.data(),
+  //     })))
+  //   })
+  // },[])
 
-  const handleAddChannel = () => {
-    const channelName = prompt("Enter name of the new Vein:");
+  // const handleAddChannel = () => {
+  //   const channelName = prompt("Enter name of the new Vein:");
 
-    if(channelName) {
-      db.collection("channels").add({
-        channelName: channelName,
-      })
-    }
-  }
+  //   if(channelName) {
+  //     db.collection("channels").add({
+  //       channelName: channelName,
+  //     })
+  //   }
+  // }
 
   return (
     <div className="sidebar">
       {/* <div className="sidebar-top">
-        <h3>Department</h3>
+        <h3>Veins</h3>
+        <AddIcon className='add-vein' />
       </div> */}
 
       <div className="sidebar-veins">
@@ -45,12 +46,14 @@ function Sidebar() {
           <div className="vein-name">
             <h4>Veins</h4>
           </div>
-            <AddIcon onClick={handleAddChannel} className='add-vein' />
+            {/* <AddIcon onClick={handleAddChannel} className='add-vein' /> */}
+            <AddIcon className='add-vein' />
         </div>
         <div className="vein-list">
-          {channels.map(({ id,channel }) => (
-            <Vein key={id} id={id} channelName={channel.channelName} />
-          ))}
+          {/* {channels.map(({ id,channel }) => ( */}
+            {/* <Vein key={id} id={id} channelName={channel.channelName} /> */}
+            <Vein />
+          {/* ))} */}
         </div>
       </div>
       <div className="sidebar-year">

@@ -6,7 +6,7 @@
     background-color: var(--bg-primary);
     color: var(--text-primary);
     padding-left: 0px;
-    border-left: 48px solid rgba(0, 0, 0, 0.374);
+    border-left: 48px solid black;
 }
 
 .sidebar-top {
@@ -15,7 +15,7 @@
     align-items: center;
     padding-top: 0px;
     padding-bottom: 20px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.636);
+    border-bottom: 3px solid black;
     background-color: var(--bg-secondary);
     color: var(--text-primary)
 }
@@ -40,7 +40,7 @@
     padding: 10px;
     background-color: var(--bg-primary);
     padding-bottom: 12px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.323);
+    border-bottom: 3px solid black;
 }
 
 .sidebar-year, .profile {
@@ -49,7 +49,7 @@
     align-items: center;
     padding: 10px;
     background-color: var(--bg-secondary);
-    border-top: 2px solid rgba(0, 0, 0, 0.604);
+    border-top: 2px solid black;
 }
 
 .year-input {
@@ -63,7 +63,7 @@
     padding-left: 4px;
     font-size: 12px;
     font-style:italic;
-    color: rgba(209, 226, 209, 0.899);
+    color: rgb(89, 234, 89);
 }
 
 .exit {

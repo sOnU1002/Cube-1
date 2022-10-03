@@ -1,8 +1,8 @@
 .root {
-    --text-primary: #ffffff7b;
-    --bg-primary: #57999d3e;
-    --bg-secondary: #278390;
-    --bg-ternary: #2dedff79;
+    --text-primary: #FFFFFF;
+    --bg-primary: #2F00B5;
+    --bg-secondary: #4200FF;
+    --bg-ternary: #632DFF;
     --chat-area-color:#000000;
 }
 
